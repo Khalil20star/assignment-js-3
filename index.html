@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container d-flex flex-column justify-content-center p-4">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center p-4">
+                <h1>Bookmarker</h1>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col">
+                    <div class="info p-4">
+                        <form>
+                            <h2 style="text-align: center;"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                                    class="fa-solid fa-bookmark"></i></h2>
+                            <label for="name"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                            <input type="text" id="name" class="form-control my-2"placeholder="Bookmark Name">
+                            <label for="url"><i class="fa-solid fa-link"></i> Site URL</label>
+                            <input type="url" id="url" class="form-control my-2" placeholder="Website URL">
+                            <div class="btn-submit d-flex justify-content-center p-3">
+                                <button id="btn" type="button" class="btn btn-danger px-5">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="tabel1">
+                    <table class="table my-5 text-center ">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableRow">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

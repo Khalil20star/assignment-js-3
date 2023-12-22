@@ -1,0 +1,98 @@
+:root {
+    --main: 'Pacifico', cursive;
+    --second: 'PT Sans Caption', sans-serif;
+    --third: 'Righteous', sans-serif;
+}
+h5{
+    margin: 0;
+}
+::selection {
+    background-color: orange;
+    color: white;
+}
+body{
+    background-color: #f7ecde;
+}
+
+h1 {
+    font-family: var(--main);
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+/* Default styling for the input */
+.is-valid {
+    border: 1px solid #28a745; /* Green border when valid */
+}
+
+.is-invalid {
+    border: 1px solid #dc3545; /* Red border when invalid */
+}
+
+
+h2 {
+    font-family: var(--third) !important;
+    font-size: 25px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #3ca55c, #ffea00);
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 20px;
+}
+.form-control{
+    margin-bottom: 25px !important;
+}
+
+label{
+    font-family: var(--second);
+    font-weight: 600;
+}
+.table1{
+    font-family: var(--third);
+}
+
+button {
+    font-weight: 500px;
+    font-family: var(--second);
+}
+.btn{
+    font-family: var(--second) !important;
+    font-weight: 500px !important;
+}
+
+.info {
+    border-style: dotted hidden;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 4px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+    transition: height 0.5s;
+}
+
+h1:hover::before{
+    height: 50%;
+}
+/* Default styling for the input */
+.is-valid {
+    box-shadow: 0 0 5px rgba(60, 165, 92, 0.7); /* Default shadow color */
+}
+
+/* Styling for the input with invalid URL */
+.is-invalid {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Red shadow color when invalid */
+}
+
+/* Styling for the input in the :focus state */
+.input-validation:focus {
+    box-shadow: 0 0 5px rgba(60, 165, 92, 0.7); /* Green shadow color when focused */
+}
+
